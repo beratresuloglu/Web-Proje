@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ! Header start -->
+    <header class="header">
+      <a href="index.html" class="logo">
+        <p>BR</p>
+      </a>
+      <nav class="navbar">
+        <a href="index.html" class="active">Hakkımda</a>
+        <a href="sehrim.html">Şehrim</a>
+        <a href="ozgecmis.html">Özgeçmiş</a>
+        <a href="takimim.html">Takımım</a>
+        <a href="ilgialanı.html">İlgi alanlarım</a>
+        <a href="iletisim.html">İletişim</a>
+        <a href="login.html">Giriş</a>
+      </nav>
+
+      <div class="buttons">
+        <button>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <!-- ! Header end -->
+
+    <!-- ! Home Start -->
+    <section class="home">
+      <div class="content">
+        <h3>MERHABA</h3>
+        <h5>Web siteme hoşgeldiniz.</h5>
+      </div>
+      <div class="about">
+        <p>
+          Ben Berat, 2005 yılının şubat ayında 4 çocuklu bir ailenin en küçük
+          üyesi olarak Giresun'da dünyaya geldim.
+        </p>
+        <br />
+        <p>
+          Uzun zamandır hayalim olan bilgisayar mühendisliği bölümünde 1. sınıf
+          öğrencisi olarak eğitim görmekteyim.
+        </p>
+        <br />
+        <p>
+          En keyif aldığım şeylerden biri futbol takip etmektir. Doğduğum ve
+          büyüdüğüm şehrin takımı olan Giresunsporu tutarım.
+        </p>
+        <br />
+        <p>
+          Diğer hobilerim arasında oyun oynamak, diz seyretmek ve arkadaşlarımla
+          vakit geçirmek var.
+        </p>
+        <br />
+        <p>
+          Benim hakkımda daha çok bilgiye erişmek istiyorsanız sitemi
+          inceleyebilirsiniz.
+        </p>
+      </div>
+    </section>
+    <!-- ! Home end -->
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const burgerButton = document.querySelector('.buttons button');
+        const navbar = document.querySelector('.navbar');
+    
+        burgerButton.addEventListener('click', function () {
+          navbar.classList.toggle('show');
+        });
+      });
+    </script>
+    
+    
+  </body>
+</html>

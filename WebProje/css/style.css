@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+/* Varsayılan ayarlar */
+.navbar {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons {
+  display: none;
+}
+
+/* Ekran genişliği 768 pikselin altına düştüğünde */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Header yüksekliğine göre ayarlanabilir */
+    left: 0;
+    width: 100%;
+    background-color: white; /* İstediğiniz renge göre ayarlayın */
+    border-top: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .buttons {
+    display: block;
+  }
+
+  .navbar.show {
+    display: flex;
+    animation: slideDown 0.3s ease;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+:root {
+  --main-color: #2f5e49;
+  --black-color: #0e0e0e;
+  --borde: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
+/* ! Base html codes */
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: url(_1e80c331-cb0f-413c-8236-449ea93c2e09.jpeg) no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+a,
+a:active,
+a::before,
+a::after {
+  color: black;
+}
+.logo p {
+  font-family: "Bebas Neue", sans-serif;
+  color: black;
+}
+
+/* ! Header start */
+.header {
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7%;
+  margin: 2rem 7%;
+  border-radius: 30rem;
+  box-shadow: 0px 0px 20px -2px rgba(0, 0, 0, 0.75);
+  position: sticky;
+  top: 0;
+}
+
+.header p {
+  color: var(--main-color);
+  font-size: 3rem;
+  z-index: 1000;
+}
+
+.header .navbar a {
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  color: var(--main-color);
+  border-bottom: 0.1rem solid transparent;
+}
+
+.header .navbar .active,
+.header .navbar a:hover {
+  border-color: var(--main-color);
+  padding-bottom: 0.5rem;
+}
+
+.header .buttons button {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-left: 2rem;
+  background-color: transparent;
+}
+/* ! header end */
+
+/* ! Home Start */
+
+.home {
+  min-height: 100vh;
+  margin-top: -8rem;
+}
+
+.home .content {
+  margin-top: 8rem;
+  max-width: 100rem;
+  padding-top: 6rem;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.home .content h3 {
+  font-size: 6rem;
+}
+
+.home .content h5 {
+  font-size: 2rem;
+}
+
+.home .about {
+  color: whitesmoke;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+/* ! Home end */

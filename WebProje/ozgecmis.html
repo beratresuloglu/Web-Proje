@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/ozgecmis.css" />
+  </head>
+  <body>
+    <!-- ! Header start -->
+    <header class="header">
+      <a href="index.html" class="logo">
+        <p>BR</p>
+      </a>
+      <nav class="navbar">
+        <a href="index.html">Hakkımda</a>
+        <a href="sehrim.html">Şehrim</a>
+        <a href="ozgecmis.html" class="active">Özgeçmiş</a>
+        <a href="takimim.html">Takımım</a>
+        <a href="ilgialanı.html">İlgi alanlarım</a>
+        <a href="iletisim.html">İletişim</a>
+        <a href="login.html">Giriş</a>
+
+      </nav>
+      <div class="buttons">
+       
+        <button>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <!-- ! Header end -->
+
+    <!-- ! Home Start -->
+    <div class="container-fluid">
+      <section class="section">
+        <h3>Eğitim hayatım</h3>
+        <p>
+          Eğitim hayatıma yaşadığım mahallenin ilköğretim okulu olan Yolağzı
+          Şehit Özkan Kılıç İlköğretim Okulunda başladım.İlkokulu burada
+          bitirdikten sonra Keşap Şehit İsmail Kefal Anadolu İmam Hatip
+          Lisesinde ortaokulu bitirdim. LGS sınavı ile Giresun Nurettin Canikli
+          Fen ve Sosyal Bilimler Proje İmam Hatip Lisesine yerleştim. Burada çok
+          güzel geçen 4 senenin ardından YKS sınavına girdim ve sayısal alanda
+          35.700 sıralama yaparak Sakarya Üniversitesi Bilgisayar Mühendisliği
+          bölümünü kazandım. Şu anda bu bölümde 1. sınıf öğrencisi olarak
+          eğitimimi sürdürmekteyim.
+        </p>
+      </section>
+      <!-- ! Home end -->
+
+      <!-- !aside -->
+      <aside class="aside">
+        <img src="images/keşapimamhatip.jpg" alt="" /><img
+          src="images/nurettincanikli.jpeg"
+          alt=""
+        /><img src="images/sau.jpeg" alt="" />
+      </aside>
+    </div>
+
+    <!-- !aside -->
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const burgerButton = document.querySelector('.buttons button');
+        const navbar = document.querySelector('.navbar');
+    
+        burgerButton.addEventListener('click', function () {
+          navbar.classList.toggle('show');
+        });
+      });
+    </script>
+  </body>
+</html>

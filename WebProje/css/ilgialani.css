@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2f5e49;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  background-color: #fff;
+  color: #2f5e49;
+  padding: 20px;
+  text-align: center;
+}
+
+input[type="text"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin: 20px 10px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  background-color: #2f5e49;
+  color: #fff;
+}
+
+button {
+  display: block;
+  width: calc(100% - 22px);
+  background-color: #fff;
+  color: #2f5e49;
+  border: 2px solid #fff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #254739;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  color: #2f5e49;
+}
+
+.movie-info {
+  display: flex;
+  align-items: center;
+}
+
+.movie-poster {
+  width: 50px;
+  height: 75px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.movie-title {
+  font-weight: bold;
+}
+
+.movie-type {
+  font-style: italic;
+  color: #666;
+}
