@@ -6,8 +6,8 @@ error_reporting(E_ALL);
 
 
 // Kullanıcı adı ve şifre burada tanımlanabilir
-$valid_username = "b231210050@sakarya.edu.tr";
-$valid_password = "b231210050";
+$valid_username = "b231210***@sakarya.edu.tr";
+$valid_password = "b231210***";
 
 // Formdan gelen kullanıcı adı ve şifreyi al
 $username = $_POST['username'];
